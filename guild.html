@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guild Recruitment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #ff5733;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e04e2f;
+    }
+    .home-btn {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      background: #0099ff;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Guild Recruitment</h2>
+    <form>
+      <label>Real Name:</label>
+      <input type="text" required>
+
+      <label>In-Game Name (IGN):</label>
+      <input type="text" required>
+
+      <label>Level:</label>
+      <input type="number" required>
+
+      <label>Battle Royale Rank:</label>
+      <select required>
+        <option>Bronze</option>
+        <option>Silver</option>
+        <option>Gold</option>
+        <option>Platinum</option>
+        <option>Diamond</option>
+        <option>Heroic</option>
+        <option>Grandmaster</option>
+      </select>
+
+      <label>Clash Squad Rank:</label>
+      <select required>
+        <option>Bronze</option>
+        <option>Silver</option>
+        <option>Gold</option>
+        <option>Platinum</option>
+        <option>Diamond</option>
+        <option>Heroic</option>
+        <option>Grandmaster</option>
+      </select>
+
+      <label>UID:</label>
+      <input type="number" required>
+
+      <label>Contact No.:</label>
+      <input type="tel" required>
+
+      <button type="submit">Submit</button>
+    </form>
+    <a href="index.html"><button class="home-btn">Home</button></a>
+  </div>
+</body>
+</html>
